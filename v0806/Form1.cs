@@ -14,6 +14,7 @@ namespace v0806
     {
         int vx = -10;
         int vy = -10;
+        int a = Math.Abs(-10);
         public Form1()
         {
             InitializeComponent();
@@ -26,19 +27,22 @@ namespace v0806
 
             if (label1.Left < 0)
             {
-                vy = 10;
+                vy = a;
             }
+            
             if (label1.Top < 0)
             {
-                vx = 10;
+                vx = a;
             }
-            if (label1.Left > 234)
+             if(label1.Right > ClientSize.Width)
+            //if (label1.Left > 234)
             {
-                vy = -10;
+                vy = -a;
             }
-            if (label1.Top > 234)
+             if (label1.Bottom > ClientSize.Height)
+            //if (label1.Top > 234)
             {
-                vx = -10;
+                vx = -a;
             }
 
         }
@@ -52,8 +56,8 @@ namespace v0806
 
         private void Form_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("幅" + ClientSize.Width);
-            MessageBox.Show("高さ" + ClientSize.Height);
+            //MessageBox.Show("幅" + ClientSize.Width);
+            //MessageBox.Show("高さ" + ClientSize.Height);
         }
        
     }
