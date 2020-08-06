@@ -36,11 +36,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(205, 231);
+            this.label1.Location = new System.Drawing.Point(125, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 12);
+            this.label1.Size = new System.Drawing.Size(63, 12);
             this.label1.TabIndex = 0;
-            this.label1.Text = "(/・ω・)/";
+            this.label1.Text = "(｡◕ˇдˇ​◕｡)/";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // timer1

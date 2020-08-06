@@ -27,22 +27,26 @@ namespace v0806
 
             if (label1.Left < 0)
             {
-                vy = a;
+                //vy = a * 11 / 10;
+                vy = Math.Abs(vy) * 11 / 10;
             }
             
             if (label1.Top < 0)
             {
-                vx = a;
+                //vx = a * 11 / 10;
+                vx = Math.Abs(vx) * 11 / 10;
             }
              if(label1.Right > ClientSize.Width)
             //if (label1.Left > 234)
             {
-                vy = -a;
+                //vy = -a * 11 / 10;
+                 vy = -Math.Abs(vy) * 11 / 10;
             }
              if (label1.Bottom > ClientSize.Height)
             //if (label1.Top > 234)
             {
-                vx = -a;
+                //vx = -a * 11 / 10;
+                vx = -Math.Abs(vx) * 11 / 10;
             }
 
         }
